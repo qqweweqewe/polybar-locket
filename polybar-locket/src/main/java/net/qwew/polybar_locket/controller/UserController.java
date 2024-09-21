@@ -23,8 +23,8 @@ public class UserController {
     private UserService userService;
 
     @PostMapping
-    public User create(@RequestBody User user) {
-        return userService.saveUser(user);
+    public Long create(@RequestBody User user) {
+        return userService.saveUser(user).getId();
     }
     
     @GetMapping("/{id}")
