@@ -12,4 +12,4 @@ done!
 
 ## updating message
 
-run `update-locket-message` in your terminal!
+run `update-locket-message` whichever way you prefer.

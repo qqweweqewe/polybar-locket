@@ -19,4 +19,4 @@ mkdir -p ~/.config/polybar/modules/locket
 cp -r ./* ~/.config/polybar/modules/locket
 rm -rf ~/.config/polybar/modules/locket/.git ~/.config/polybar/modules/locket/.gitignore ~/.config/polybar/modules/locket/install.sh
 
-sudo ln -s $(realpath ./update-msg) /usr/bin/update-msg
+echo "export PATH=$PATH:$HOME/.config/polybar/modules/locket/" >> .
