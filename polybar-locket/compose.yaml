@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    restart: always
+    environment:
+      - 'POSTGRES_DB=locket'
+      - 'POSTGRES_PASSWORD=passwd'
+      - 'POSTGRES_USER=qwew'
+    ports:
+      - '5432:5432'
