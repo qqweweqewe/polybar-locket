@@ -9,7 +9,7 @@ echo "password=$password" >> config.conf
 
 echo -e "now remember your password carefully! it is needed to update messages. \033[31mthere is no way of restoring it yet\033[0m"
 
-response=$(curl -s --json '{"password": "ass"}' http://cubercube.ru:8080/api/v1/user)
+response=$(curl -s --json "{\"password\": \"$password\"}" http://cubercube.ru:8080/api/v1/user)
 echo "id=$response" >> config.conf
 
 echo -e "your id is: \033[31m$response\033[0m. now share it with friends!"
