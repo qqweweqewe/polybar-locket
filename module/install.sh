@@ -18,5 +18,3 @@ echo -e "your id is: \033[31m$response\033[0m. now share it with friends!"
 mkdir -p ~/.config/polybar/modules/locket
 cp -r ./* ~/.config/polybar/modules/locket
 rm -rf ~/.config/polybar/modules/locket/.git ~/.config/polybar/modules/locket/.gitignore ~/.config/polybar/modules/locket/install.sh
-
-echo "export PATH=$PATH:$HOME/.config/polybar/modules/locket/" >> .
