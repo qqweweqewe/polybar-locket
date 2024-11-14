@@ -9,7 +9,7 @@ read -r password
 
 echo "password=$password" >> config.conf
 
-response=$(curl -s --json "{\"password\": \"$password\"}" http://cubercube.ru:8080/api/v1/user)
+response=$(curl -s --json "{\"password\": \"$password\"}" http://cut-usual.gl.at.ply.gg:58289/api/v1/user)
 echo "id=$response" >> config.conf
 
 echo "your id is: $response. now share it with friends!"
